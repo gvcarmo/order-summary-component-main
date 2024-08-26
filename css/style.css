@@ -1,0 +1,97 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: #fff;
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.descricao {
+    padding: 30px;
+}
+
+.descricao, .plan {
+    color: var(--dark-blue);
+}
+
+.descricao h1 {
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+.plan-text {
+    padding: 0px 60px 0px 20px;
+}
+.plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.plan img {
+    width: 35px;
+    height: 35px;
+}
+
+.plan .selected-plan {
+    font-weight: 700;
+}
+
+.plan a {
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.buttons .button-1, .button-2 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.buttons .button-1:hover, .button-2:hover {
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 10px;
+}
