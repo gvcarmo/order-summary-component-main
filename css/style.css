@@ -101,9 +101,6 @@ body {
     background-color: var(--bright-blue2);
 }
 
-.buttons .button-2 {
-}
-
 .buttons .button-2:hover {
     color: var(--dark-blue)
 }
