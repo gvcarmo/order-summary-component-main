@@ -1,6 +1,7 @@
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue2: rgb(95, 82, 242);
 
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
@@ -90,8 +91,19 @@ body {
 
 }
 
-.buttons .button-1:hover, .button-2:hover {
+.buttons .button-1 {
     background-color: var(--bright-blue);
     color: white;
     border-radius: 10px;
+}
+
+.buttons .button-1:hover {
+    background-color: var(--bright-blue2);
+}
+
+.buttons .button-2 {
+}
+
+.buttons .button-2:hover {
+    color: var(--dark-blue)
 }
